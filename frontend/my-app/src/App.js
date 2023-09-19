@@ -5,7 +5,7 @@ const App = () => {
   useEffect(() => {
     const getTestapi = async () => {
       const response = await axios.get(
-        "https://poc-user-hint-jltk088i1-manjot-singh95.vercel.app"
+        "https://poc-user-hint.vercel.app"
       );
       setData(response.data);
     };
@@ -13,7 +13,8 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div >
+      <span className="App">welcome to the demo app</span>
       <h6>{data?.msg}</h6>
     </div>
   );
